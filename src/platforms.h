@@ -36,6 +36,8 @@
 #include "platforms/esp/32/fastled_esp32.h"
 #elif defined(ARDUINO_ARCH_APOLLO3)
 #include "platforms/apollo3/fastled_apollo3.h"
+#elif defined(FASTLED_LIBONLY)
+#include "platforms/arm/libonly/fastled_arm_libonly.h"
 #else
 // AVR platforms
 #include "platforms/avr/fastled_avr.h"

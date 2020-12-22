@@ -66,4 +66,6 @@
 // This enable much more accurate color control on low brightness settings.
 //#define FASTLED_USE_GLOBAL_BRIGHTNESS 1
 
+#define FASTLED_LIBONLY 1
+
 #endif
