@@ -1,6 +1,10 @@
 #ifndef __INC_LED_SYSDEFS_ARM_LIBONLY_H
 #define __INC_LED_SYSDEFS_ARM_LIBONLY_H
 
+#ifndef FASTLED_LIBONLY
+#define FASTLED_LIBONLY
+#endif
+
 #define cli() @do not use cli
 #define sei() @do not use sei   
 
@@ -28,6 +32,8 @@ typedef volatile       uint8_t RoReg; /**< Read only 8-bit register (volatile co
 typedef volatile       uint8_t RwReg; /**< Read-Write 8-bit register (volatile unsigned int) */
 
 #define FASTLED_NO_PINMAP
+
+#define NEED_CXX_BITS
 
 #ifndef F_CPU
 #define F_CPU 0
